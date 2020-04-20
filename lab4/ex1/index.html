@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <title>ex1</title>
+    
+    <link rel="stylesheet" href="css/style.css" />
+    
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+    <h1>Зміна властивостей зображення</h1>
+    <img id="img" src="img/phoenix.jpg" />
+
+
+    <form id="form" action="" method="post" name="form" onsubmit="change(this);return false">
+        
+        
+        <h2>Зміна розмірів:</h2>
+        <p>
+            <label for="width">Ширина</label>
+            <input id="width" type="number" required />
+        </p>
+
+        <p>
+            <label for="height">Висота</label>
+            <input id="height" type="number" required />
+        </p>
+
+
+        <h2>Зміна рамки:</h2>
+
+        <p>
+            <label for="border">Товщина рамки</label>
+            <input id="border" type="number" required />
+        </p>
+
+        <p>
+            <label for="border_color">Колір рамки</label>
+            <input id="border_color" type="text" required />
+        </p>
+
+
+        <h2>Додатково:</h2>
+        <p>
+            <label for="alt_text">Альтернативний текст</label>
+            <input id="alt_text" type="text" required />
+        </p>
+        <input class="button" type="submit" name="submit"  value="Застосувати параметри">
+    </form>
+
+    
+    
+</body>
+
+</html>
